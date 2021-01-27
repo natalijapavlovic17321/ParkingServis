@@ -1,0 +1,71 @@
+html
+{
+    height: 100%;
+    box-sizing: border-box;
+}
+body{
+    position: relative;
+    padding-bottom: 6rem;
+    background-color: lightgray;
+}
+footer,header
+{
+    background-color: rgb(143, 139, 139);
+}
+footer
+{
+    text-align: center;
+    font-size: 11px;
+    line-height: 16px;
+    color:white;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+header
+{
+    text-align: center ;
+    color:white;
+    font-size: medium;
+}
+.MegaKontejner
+{
+    display: flex;
+}
+.kontParkiraj{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 200px;
+    border: 1px solid black ;
+    border-right: 0px solid black ;
+}
+.kontPovrsine{
+    display: flex;
+    text-align: center;
+    border: 1px solid black;
+    flex: 1 1 10px;
+    flex-wrap: wrap;
+}
+.kontejner{
+    display: flex;
+    border:  1px solid black;
+    margin: 5px;
+    flex-grow: 1;
+    flex-wrap: wrap;
+}
+.kontMesta{
+    text-align: center;
+    display: flex;
+    flex: 1 1 10px;
+    flex-direction: column;
+}
+.red{
+    display: flex;
+    flex-grow: 1;
+}
+.mes{ 
+    border: 1px solid black;
+    flex: 1 1 10px;
+    margin: 5px;
+    text-align: center;
+}

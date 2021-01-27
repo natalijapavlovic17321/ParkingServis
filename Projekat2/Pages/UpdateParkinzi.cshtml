@@ -1,0 +1,15 @@
+﻿@page
+@using Projekat2.Pages
+@model UpdateParkinziModel
+@{
+    ViewData["Title"]=" Change";
+    Layout="_Layout";
+}
+<form method="post">
+    @Html.AntiForgeryToken()
+    <p>Naziv: <input type="text" name="par.Naziv" placeholder="@Model.par.Naziv"</p>>
+    <p>Num: <input type="number" name="par.Num" placeholder="@Model.par.Num"</p>>
+    <p>N: <input type="number" name="par.N" placeholder="@Model.par.N"</p>>
+    <p>M: <input type="number" name="par.M" placeholder="@Model.par.M"</p>>
+    <input type="submit" value="Change">
+</form>

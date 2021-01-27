@@ -1,0 +1,32 @@
+﻿@page
+@using Projekat2.Pages
+@model SkupParkinziModel
+@{
+    ViewData["Title"]="Skup Parkinzi";
+    Layout="_Layout";
+}
+@section Styles{
+    <link rel="stylesheet" href="Styles/Style.css">
+}
+<a class="novi" href="CreateParkinzi">Create new</a>
+<table>
+    <tr>
+        <th>Parkinzi</th>
+        <th>Broj</th>
+        <th>N</th>
+        <th>M</th>
+        <th>Edit</th>
+        <th>Delete</th>
+    </tr>
+    @foreach (var v in Model.Skup)
+    {
+        <tr>
+            <td>@v.Naziv</td>
+            <td>@v.Num</td>
+            <td>@v.N</td>
+            <td>@v.M</td>
+            <td><a href="UpdateParkinzi?id=@v.ID">Update</a></td>
+            <td><a href="DeleteParkinzi?id=@v.ID">Delete</a></td>
+        </tr>
+    }
+</table>

@@ -1,0 +1,15 @@
+﻿@page
+@using Projekat2.Pages
+@model CreateParkinziModel
+@{
+    ViewData["Title"]=" Create";
+    Layout="_Layout";
+}
+<form method="post">
+    @Html.AntiForgeryToken()
+    <p>Naziv: <input type="text" name="par.Naziv" placeholder="Naziv"</p>>
+    <p>Num: <input type="number" name="par.Num" placeholder="Num"</p>>
+    <p>N: <input type="number" name="par.N" placeholder="N"</p>>
+    <p>M: <input type="number" name="par.M" placeholder="M"</p>>
+    <input type="submit" value="Submit">
+</form>
